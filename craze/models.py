@@ -33,14 +33,14 @@ class Location(models.Model):
     def __str__(self):
         return self.name
 
-    #     class Category(models.Model):
-    # name = models.CharField(max_length=30)
+        class Category(models.Model):
+    name = models.CharField(max_length=30)
 
-    # def save_category(self):
-    #     self.save()
+    def save_category(self):
+        self.save()
 
-    # def delete_category(self):
-    #     self.delete()
+    def delete_category(self):
+        self.delete()
 
-    # def __str__(self):
-    #     return self.name
+    def __str__(self):
+        return self.name
