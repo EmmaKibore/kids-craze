@@ -20,6 +20,7 @@ class Profile(models.Model):
     def get_profiles(cls):
         profiles = cls.objects.all()
         return profiles
+        
 
 class Location(models.Model):
     name = models.CharField(max_length=30)
@@ -33,7 +34,8 @@ class Location(models.Model):
     def __str__(self):
         return self.name
 
-        class Category(models.Model):
+
+class Category(models.Model):
     name = models.CharField(max_length=30)
 
     def save_category(self):
